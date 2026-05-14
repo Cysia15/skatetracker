@@ -1,0 +1,21 @@
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header
+    {
+        background-color: blanchedalmond;
+        justify-items: center;
+        text-align: center;
+    }
+    main
+    {
+        background-color: blanchedalmond;
+        justify-items: center;
+        text-align: center;
+        height: 1500px;
+    }
+button
+{
+    background-color: antiquewhite;
+    border: 6px azure solid;
+}

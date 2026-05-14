@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h2>
+           Track and learn new skateboarding tricks!
+        </h2>
+
+       <a href="skate.html">  <button >S.K.A.T.E</button> </a>  
+       <a href="add.html">    <button>add new trick</button> </a>  
+        <a href="index.html">   <button>home</button> </a>  
+         <a>  <button>choose from list</button> </a>  
+          <a> <button>stats</button> </a>  
+    </header>
+    <main>
+         <h2>Roll the dice</h2>
+         <h3 id="trick">Trick</h3>
+        <button id="roller" onclick="roll()">Roll the dice</button>
+        
+        <br>
+        <button onclick="nail()">Nailed it!</button> <button onclick="fail()">I failed</button>
+        <h1 id="skategame"></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JNmUK9fvrAs?si=q_FgfVQ15bxLAvtP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </main>
+        <script>
+            let letters = 0;
+            function roll()
+            {
+                let rand = Math.floor(Math.random() * 20);
+                switch (rand)
+                {
+                    case 0:
+document.getElementById("trick").innerHTML = "Ollie";
+                        break;
+                    case 1:
+                        document.getElementById("trick").innerHTML = "Fakie ollie";
+                        break;
+                    case 2:
+                        document.getElementById("trick").innerHTML = " Switch ollie";
+                        break;
+                    case 3:
+                        document.getElementById("trick").innerHTML = "Nollie";
+                        break;
+                    case 4:
+                        document.getElementById("trick").innerHTML = "Shove it";
+                    break
+                    case 5:
+                        document.getElementById("trick").innerHTML = "Fakie shove it";
+                        break;
+                        case 6:
+                        document.getElementById("trick").innerHTML = "Switch shove it";    
+                        break;
+                        case 7:
+                            document.getElementById("trick").innerHTML = "Nollie shove it";
+                        break;
+                        case 8:
+                            document.getElementById("trick").innerHTML = "Pop shove it";
+                            break;
+                        case 9:
+                            document.getElementById("trick").innerHTML = "Fakie pop shove it";
+                            break;
+                         case 10:
+                            document.getElementById("trick").innerHTML = "Switch pop shove it";
+                            break;  
+                        case 11:
+                            document.getElementById("trick").innerHTML = "Nollie pop shove it";
+                            break;
+                             case 12:
+                            document.getElementById("trick").innerHTML = "Fs pop shove it";
+                            break;
+                             case 13:
+                            document.getElementById("trick").innerHTML = "Fakie fs pop shove it";
+                            break;
+                             case 14:
+                            document.getElementById("trick").innerHTML = "Switch fs Pop shove it";
+                            break;
+                             case 15:
+                            document.getElementById("trick").innerHTML = "Nollie fs Pop shove it";
+                            break;
+                             case 16:
+                            document.getElementById("trick").innerHTML = "Frontside 180";
+                            break;
+                             case 17:
+                            document.getElementById("trick").innerHTML = "Fakie frotside 180";
+                            break;
+                             case 18:
+                            document.getElementById("trick").innerHTML = "Switch frontside 180";
+                            break;
+                             case 19:
+                            document.getElementById("trick").innerHTML = "Nollie frontside 180";
+                            break;
+                             case 20:
+                            document.getElementById("trick").innerHTML = "Backside 180";
+                            break;
+                }
+             
+                
+            }
+            function nail()
+            {
+             
+            }
+            function fail()
+            {
+letters += 1;
+                    switch (letters)
+                    {
+                        case 1:
+                        document.getElementById("skategame").innerHTML = "S";
+                        break
+                        case 2:
+                        document.getElementById("skategame").innerHTML = "S.K";
+                        break
+                        case 3:
+                        document.getElementById("skategame").innerHTML = "S.K.A";
+                        break
+                        case 4:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T";
+                        break
+                        case 5:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E";
+                        break
+                        case 6:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E.B";
+                        break
+                        case 7:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E.B.O";
+                        break
+case 8:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E.B.O.A";
+                        break
+                        case 9:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E.B.O.A.R";
+                        break
+                        case 10:
+                        document.getElementById("skategame").innerHTML = "S.K.A.T.E.B.O.A.R.D";
+                        break
+                    }
+                    
+
+
+
+
+
+
+
+
+
+   
+            
+            }
+        </script>
+</body>
+</html>
